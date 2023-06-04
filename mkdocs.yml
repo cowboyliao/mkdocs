@@ -1,1 +1,66 @@
-site_name: My Docs
+# [Info]
+site_name: cowboyliao的个人网站 # 左上角标题
+site_url: https://cowboyliao.github.io
+site_author: cowboyliao
+site_description: cowboyliao的个人网站
+
+# [Navigtion]
+nav:
+  - Home: index.md
+  - Basic Tools: 
+    - Vim: template.md
+    - Git: template.md
+    - Latex: template.md
+    - CMake: template.md
+    - Nix: template.md
+    - Prompt: template.md
+
+  - Books: 
+    - DDIA: 
+      - index.md          
+      # - introduction: template.md
+      # - introduction: template.md
+    - CSAPP: template.md
+    - SICP: template.md
+  - Courses: 
+    - SJU: 模拟电子技术基础.md
+    - ZJU: 信号与系统.md
+  - About:
+    - 'License': 'license.md'
+    - 'Release Notes': 'releasenotes.md'
+
+
+
+# [UI]
+## [top]
+theme:
+  name: readthedocs
+  highlightjs: true
+  hljs_languages:
+    - yaml
+    - rust
+  features:
+    - navigation.tabs # 使用Tab来进行分类
+    - navigation.top # 返回顶部的按钮 在上滑时出现
+    - navigation.indexes # Tab会有一个index.md 而不是在打开Tab时打开第一篇文章
+    - navigation.expand # 打开Tab时左侧目录全部展开
+    - search.suggest # 搜索输入一些字母时推荐补全整个单词
+    - search.highlight # 搜索出的文章关键词加入高亮
+    - content.code.copy # 可以通过按钮复制代码
+    - content.action.edit # 点击按钮跳转到编辑页面  需要结合 edit_uri 一起使用
+  language: zh # 一些提示性的文字会变成中文
+  icon:
+    repo: fontawesome/brands/github
+  locale:
+    zh_CN
+edit_uri: edit/main/docs # 编辑按钮跳转的链接
+shortcuts:
+    help: 191    # ?
+    next: 78     # n
+    previous: 80 # p
+    search: 83   # s
+
+
+## [top-right corner]
+repo_url: https://github.com/cowboyliao/cowboyliao.github.io # 右上角点击跳转的链接
+repo_name:  # 右上角的名字
